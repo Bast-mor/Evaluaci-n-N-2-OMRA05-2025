@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "d765459f-574b-4956-8f65-7c74c2fa08c4",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43993322",
+		"_collection_link": "https://bastianmora.postman.co/workspace/Bastian-Mora's-Workspace~fdb756dc-6b4c-4ffd-8fe9-5e7916f85368/collection/43993322-d765459f-574b-4956-8f65-7c74c2fa08c4?action=share&source=collection_link&creator=43993322"
+	},
+	"item": [
+		{
+			"name": "https://<192.168.101.1>/api/v1/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "{",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "\"username\"",
+						"value": " \"Prueba2\",",
+						"type": "text"
+					},
+					{
+						"key": "\"password\"",
+						"value": " \"SDN.2025\",",
+						"type": "text"
+					},
+					{
+						"key": "\"role\"",
+						"value": " \"Admin\"",
+						"type": "text"
+					},
+					{
+						"key": "}",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://<192.168.101.1>/api/v1/user",
+					"protocol": "https",
+					"host": [
+						"<192",
+						"168",
+						"101",
+						"1>"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://<192.168.101.1>/dna/intent/api/v1/network-device",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": " <Token_obtenido>",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://<192.168.101.1>/dna/intent/api/v1/network-device",
+					"protocol": "https",
+					"host": [
+						"<192",
+						"168",
+						"101",
+						"1>"
+					],
+					"path": [
+						"dna",
+						"intent",
+						"api",
+						"v1",
+						"network-device"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://<192.168.101.1>/dna/system/api/v1/auth/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": " Basic <base64(usuario:contraseña)>",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://<192.168.101.1>/dna/system/api/v1/auth/token",
+					"protocol": "https",
+					"host": [
+						"<192",
+						"168",
+						"101",
+						"1>"
+					],
+					"path": [
+						"dna",
+						"system",
+						"api",
+						"v1",
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
